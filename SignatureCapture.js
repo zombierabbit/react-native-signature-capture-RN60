@@ -3,7 +3,7 @@
 
 var ReactNative = require('react-native');
 var React = require('react');
-var PropTypes = require('prop-types');
+//var PropTypes = require('prop-types');
 var {
     requireNativeComponent,
     View,
@@ -88,7 +88,7 @@ class SignatureCapture extends React.Component {
     }
 }
 
-SignatureCapture.propTypes = {
+/*SignatureCapture.propTypes = {
   ...View.propTypes,
     rotateClockwise: PropTypes.bool,
     square: PropTypes.bool,
@@ -102,7 +102,7 @@ SignatureCapture.propTypes = {
     maxStrokeWidth: PropTypes.number,
     strokeColor: PropTypes.string,
     backgroundColor: PropTypes.string
-};
+};*/
 
 var RSSignatureView = requireNativeComponent('RSSignatureView', SignatureCapture, {
     nativeOnly: { onChange: true }
